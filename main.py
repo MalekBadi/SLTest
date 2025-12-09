@@ -30,7 +30,10 @@ def main():
             format="%.2f"
         )
         
-        # Convert and display result
+        # Convert button
+        st.button("Convert to Celsius", type="primary")
+        
+        # Automatic conversion display
         celsius = fahrenheit_to_celsius(fahrenheit)
         st.success(f"**{fahrenheit}°F = {celsius:.2f}°C**")
         
@@ -43,7 +46,10 @@ def main():
             format="%.2f"
         )
         
-        # Convert and display result
+        # Convert button
+        st.button("Convert to Fahrenheit", type="primary")
+        
+        # Automatic conversion display
         fahrenheit = celsius_to_fahrenheit(celsius)
         st.success(f"**{celsius}°C = {fahrenheit:.2f}°F**")
 
